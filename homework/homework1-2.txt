@@ -1,0 +1,16 @@
+Last login: Thu Jun 10 11:06:51 on ttys001
+Edis-MacBook-Air:~ eddie$ cd
+Edis-MacBook-Air:~ eddie$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+Edis-MacBook-Air:~ eddie$ cd Desktop
+Edis-MacBook-Air:Desktop eddie$ cd summer2021-webdesign-edi
+Edis-MacBook-Air:summer2021-webdesign-edi eddie$ mkdir homework
+Edis-MacBook-Air:summer2021-webdesign-edi eddie$ ls
+assignments	handouts	homework	projects
+Edis-MacBook-Air:summer2021-webdesign-edi eddie$ cd homework
+Edis-MacBook-Air:homework eddie$ ls
+Edis-MacBook-Air:homework eddie$ touch homework.txt
+Edis-MacBook-Air:homework eddie$ ls
+homework.txt
+Edis-MacBook-Air:homework eddie$
