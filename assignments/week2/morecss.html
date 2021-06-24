@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+
+<html lang="eng">
+    <head>
+<meta charset="utf-8" />
+<little> More CSS</title>
+
+    <!--Internal Stylesheets-->
+    <!--Desining your life book-->
+    <!--https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax-->
+
+    <style>
+img {
+    width: 200px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: burlywood;
+    border-radius: 20px;
+}
+
+/*class is more specific*/
+.portrait {
+    border-color: lightcoral;
+}
+
+/*class, above starts with a period. Contrary, with ID's you start with a hash*/
+
+#astrological {
+    box-shadow: 10px 10px gray;
+}
+
+/*Specificity, overwrites general characteristics that ain't specificity. The higher the number the most important it is.
+
+Specificity values: 
+An Element equals one point
+A Class= 10 points
+An ID= 100 points
+*/
+
+div{
+
+    background-color: green;
+    width: 600px;
+    border: green solid 5px;
+
+
+}
+
+div h1{
+    color: gray;
+}
+
+body div .portrat{
+    border-color: cornflowerblue;
+
+}
+
+/* span not widly used. to make font changes*/
+#happy{
+    color: red;
+}
+
+
+
+        </style>
+
+    </head>
+    <body>
+        <hi>My favorite Picture</hi>
+    <img class="portrait" src="picname" alt="Some sort of picture description" />
+
+    <img class="portrait" src="picname2" alt="Some other sort of picture description" />
+
+    <!--this allows the picture to be clickable to a website, no space between <a></a>-->
+    <a href="https://google.com/" target="blank">
+    <img src="newspaperfire" alt="girl in front of abandoned building stairs, reading a newspaper that's on fire"></a>
+
+    <img id="astrological"  src="redsun.jpg" alt="Dark smoggy sky with a very" />
+
+<div>
+        <hi>My favorite <span id= "happy">happy</span> Picture</hi>
+        <img class="portrait" src="picname" alt="Some sort of picture description" />
+
+        <img class="portrait" src="picname2" alt="Some other sort of picture description" />
+
+        <!--this allows the picture to be clickable to a website, no space between <a></a>-->
+        <a href="https://google.com/" target="blank">
+        <img src="newspaperfire" alt="girl in front of abandoned building stairs, reading a newspaper that's on fire"></a>
+
+        <img id="astrological"  src="redsun.jpg" alt="Dark smoggy sky with a very" />
+
+</div>
+    </body>
+
+
+    </html>
