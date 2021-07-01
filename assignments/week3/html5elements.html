@@ -3,19 +3,82 @@
 <html>
 
 <head>
-    <meta charset="alt-8" />
+    <meta charset="utf-8" />
     <title> Lookign at HTML5 elements</tile>
+<!--https://specifishity.com/-->
+<!--increasing value with body (where code lives for purple, but that increases value to 101 overrulling rule order -->
+        <style>
+            
+            #redbox, /*body space*/ #purplebox {
+                display: inline-block; /*inline by itselfhave no dimension WxH, wwith inline-block there's dimension flowing as if text */
+                width: 180px; /*adds with padding for 200 px*/
+                height:100px;
+                background-color: red;
+                padding-left: 20px; /*affects body class:box */
+                padding-top: 20px; /*automatically adds extra from google margin-bloc-start...*/
 
-        <stule>
+                /* padding-top: 20px; */
+                margin-top: 20px; /*these 2 div's boxes share margin*/
+                margin-left: 20px;
+                border: 20px gray solid; /*adds up n=2 sides as geometric figure has all sides n=4*/
+            }
 
+#purplebox {
+    background-color: purple;
+}
+            #greenbox, #yellowbox {
+                width: 300px;
+                height: 300px;
+                background-color: green;
+                margin-top: 10px;
+            }
+            p {
+                /*to block automatic from chrome, it applies to Text elements, hence here in p */
+                /* when you want to set value to nothing, use 0 with no units to work*/
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+#yellowbox {
+    background-color: yellow;
+}
+            body{
+                margin: 20px;
+                padding: 20px;
+            }
+
+/*to make it a direct child use >  that acts as arrow */
+body > p {
+    display: inline;
+    /*it should appear next to both boxes in same line */
+}
         </style>
 
 </head>
 <!--Programming partners: online for coding learners. Pair programmer. Sithching back and forth between 2 people-->
+<!--https://www.rapidtables.com/web/html/html-codes.html-->
 <body>
 
 </body>
     <header>
+            <div id="redbox">
+            <p> Hello World</p>
+            <div id="greenbox">
+               <p> if you want a box inside a box</p>
+            </div>
+           
+
+        </div>
+
+        <div id="purplebox">
+            <p> Hello World</p>
+            <div id="yellowbox">
+               <p> if you want a box inside a box</p>
+            </div>
+        </div>
+
+<p>this should be next to the purple box</p>
+<!--to add the bottom teeth you can duplicate the 'V' div, give it a new id and apply this css to it - transform: scale(1.1) rotate(180deg);-->
+
         <!--Logo, sections, navigation bars, etc go inhere-->
         <nav></nav>
     

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<htm lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title> My first CSS layout WebPage </title>
+
+
+        <style>
+            #container{
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /*clue of rule of thirds in photography*/
+        #header{
+            background-color: thistle;
+            color: indigo;
+            text-align: center;
+            font-family: "Arial";
+            font-size: 28px;
+            text-transform: uppercase;
+            border-radius: 14px;
+        }
+
+        #header h1{
+            margin-block-end: 0;
+        }
+        #main{
+            padding: 28px;
+            background-color: skyblue;
+            color: midnightblue;
+            font-family: "Arial";
+            font-size: 20px;
+            /*font-weight: bold;*/
+            border-radius: 14px;
+            line-height: 42px;
+            text-align: justify;
+            word-spacing: 
+        }
+
+        #main-p{
+            margin-block-start: 0;
+        }
+
+        #main #article{
+            width: 644px;
+           /* height: 200px; */
+            background-color: navajowhite;
+        }
+
+        #main #section{
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            background-color: orangered;
+            vertical-align: top;
+            border-radius: 14px;
+        }
+        #footer {
+            margin-top:28px;
+            background-color:rosybrown;
+            height: 28px;
+            border-radius: 14px;
+            font-size: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-family: "Arial";
+
+        }
+        </style>
+
+
+
+    </head>
+
+
+    <body>
+        <div id="container"> <!--contains all 3 divs below, see corredpointing closing tag at the end-->
+
+
+        <div id="header">
+            <h1>Welcome to this Website</h1>
+        </div>
+
+        <div id="main">
+            <!--to make 2 columns is with 2 div's one coloured and one invidible-->
+            <div id="article">
+                <p>Oh, all right, I am. But if anything happens to me, tell them I died robbing some old man. I didn't ask for a completely reasonable excuse! I asked you to get busy! Oh right. I forgot about the battle.</p>
+                <p>Five hours? Aw, man! Couldn't you just get me the death penalty? This is the worst kind of discrimination: the kind against me! Good news, everyone! I've taught the toaster to feel love! Hey, you add a one and two zeros to that or we walk!</p>
+                <p> Cheesy feet ricotta feta. Cheese and biscuits port-salut paneer babybel parmesan cheese and wine cheese strings melted cheese. Feta airedale mascarpone cheese and wine parmesan cheese triangles cottage cheese cheesy grin. Babybel everyone loves monterey jack the big cheese boursin emmental fromage melted cheese. Gouda cheesecake hard cheese mozzarella.</p> 
+            </div><div id="section"></div>
+
+            
+        </div>
+
+        <div id="footer">
+            <p>Copyright 2021</p>  
+        </div>
+
+    </div>
+
+    </body>
+
+</html>

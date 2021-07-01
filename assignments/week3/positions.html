@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <meta charset="utf-8"/>
+    <title> CSS Positions</title>
+
+    <style>
+        body {
+            border:black;
+            height: 20000px;
+        }
+        #red, #blue, #green, #yellow{
+            width: 200px;
+            height: 200px;
+        }
+
+        #red {
+            background-color: red;
+            position: absolute; /* position absolute is relative to its parent or ancestor, in this case is <body>*/
+            top: 50px; /* position from the very top of the parent <body>*/
+            left: 100px;
+            /* margin does shift all in line with the page flow. Position removes it for the flow, as if 3D like the pop-ups in websites:
+            margin-top:50px;
+            margin-left:100px; */
+            z-index: 2;
+            /* z-index value dictates the importance, higher value more important to be on top of everything. The fault value is 0 zero*/
+        }
+
+        #blue {
+            background-color: blue;
+            position: relative; /*within line but offset*/
+            top: 100px;
+            left: 150px;
+            margin-top: 100px; /*position relative inherits margin*/
+        }
+
+        #green {
+            background-color: green;
+            position: fixed;
+        }
+
+        #yellow{
+            position: sticky;
+            top: 0;
+            background-color: yellow;
+            /*inland text to make blocks in the same like, acting as text-like */
+            /*to center devide center of the body to center, minus half of the width of the box, for example a fix window, which it will affect when making browser window:
+            margin-left: 631px */
+
+            margin-left: auto;
+            margin-right: auto;
+                    }
+    </style>
+
+
+    <body>
+
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="green"></div>
+
+        <div id="yellow">
+
+        </div>
+
+    </body>
+</htm>
