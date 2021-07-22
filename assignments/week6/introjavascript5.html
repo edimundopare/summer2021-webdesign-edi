@@ -451,110 +451,235 @@
             // Putting it all together for Functions
 
             function add2Numbers(number1, number2) {
-                var sum = number1 + number2;
+                var sum = number1 - number2;
+
 
                 return sum;
             }
 
-            var myResults = add2Numbers(16, 5);
+            var myResults = add2Numbers(7, 13);
 
             var sendToConsole = add2Numbers(myResults, myResults);
 
             console.log(sendToConsole);
 
-
-            //Arrays & objectives. Arrays groups multiple pieces of data as one, separated by commas within the square brakets
-            var thusIsAVariable = "One Thing";
+            // Arrays & Objects
+            var thisIsAVariable = "One Thing";
 
             thisIsAVariable = "Another thing";
 
-            //empty Array
-            var myArray =[];
+            var firstDay = "Monday";
+            var secondDay = "Tuesday";
+            // etc.
 
-            var mySecondArray =[1,2,3,4,5];
-            var myThirdarray = ["a", "b", "c"]
-            console.log(mySecondArray);
+            // empty Array.
+            var myArray = [];
+
+            var mySecondArray = [1, 2, 3, 4, 5];
+            //          Indexes: 0  1  2  3  4
             
-            //array element: an item in an array
+            var myThirdArray = ["A", "B", "C"];
+            //                   0    1    2
 
-            //Array indexes. address of an item in an array. they start 0, not 1
-            //to grab a value in a variable:
+            // Array Indexes = an "address" of an item in an array.
+            // Array Element = an "item" in an Array.
+            // Indexes start from 0, not 1!
 
             var myNum = mySecondArray[3];
-            console.log(myNun);
+            console.log(myNum);
 
-            var myTxt = myThirdarray [3];
+            var myText = myThirdArray[1];
             console.log(myText);
 
-            // Array methods (functions by calling with a period pop  .po())
-            // getting the Last value in an array also removes it from the array
+            console.log(mySecondArray);
 
+            // Array Methods
+
+            // Getting the LAST value in an array. Also removes it from the Array.
             console.log( myThirdArray.pop() );
 
-            console.log (myThirdArray);
+            console.log( myThirdArray );
 
-            //getting a value at the END of the array
-            myThirdArray.push("C");
+            // Putting a value at the END of the array.
+            myThirdArray.push("c");
 
-            console.log (myThirdArray);
+            console.log( myThirdArray );
 
-            //getting the FIRST value in an array. Also removes value from the array
-            console.log(myThirdArray.shift());
-            console.log(myTHirdArray);
+            // Getting the FIRST value in an array. Also removes it from the Array.
+            console.log( myThirdArray.shift() );
 
-            //putting a value at the start of the array
-            myThirdArray.unshift("A");
-            console.log(myThirdArray);
+            console.log( myThirdArray );
 
-            // also very useful, returns the total count of elements in that array. Not a function is a property
+            // Putting a value at the START of the array.
+            myThirdArray.unshift("a");
 
-            console.log(myThirdArray.length);
+            console.log( myThirdArray );
+        
+            // Also very useful, returns the total count of elements in that array.
+            console.log( myThirdArray.length );
 
-            //arrays elements gotta be related
-            //updating a single value in an Array
-            var myRandomArray =[10, 600, "hello", true];
 
-            var myProperArray=["M", "T", "W", "Th", "F", "S", "Su"];
+            var myRandomArray = [10, 600, "hello", true];
+            var myProperArray = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-            var myEmployerSalaries=["M", "T", "W", "Th", "F", "S", "Su"];
+            // Updating a single value in an Array.
+            var myEmployeeSalaries = [16000, 21000, 40000, 7000];
+            // Use the index when you are assigning the value, otherwise you will be replacing the ENTIRE array.
+            myEmployeeSalaries[1] = 23000;
 
-            myEmployeeSalaries[1] = "tuesday";
+            // Multi-dimensional Arrays = when there are arrays within an array.
 
-            // multi-dimensional Arrays: when there are arrys within an array
-
-            var mapShapeCoords=[
+            var mapShapeCoords = [
                 [14, 28],
-                [9, 36],
-                [8,32]
+                [19, 36],
+                [8, 32]
             ];
 
-            //or from array above arrays as:
+            36;
 
-            myShapeCoords[2][1]; //to access number 32
-            myShapeCoords[0][0]; //to access number 14
-            //updating number 8 to 9
-            mapShapeCoords[2][0] =9;
+            mapShapeCoords[2][1]; // Access number 32.
+            mapShapeCoords[0][0]; // Access number 14.
+
+            // Updating number 8 to a number 9.
+            mapShapeCoords[2][0] = 9;
 
             console.log(mapShapeCoords);
 
-            //combining loops and arrays: loops have a counter
+            var sum = mapShapeCoords[0][0] + mapShapeCoords[2][1];
 
-            var salaries =[300, 40, 0, 500, 500, 600];
+            console.log(sum);
 
-            //task: add a 5% bonus for one
-             var oldSalary = salaries[0];
-             var percentBonus = .05;
-             var newSalary = oldSalary +(oldSalary * percentBonus);
 
-             salaries[0] =newSalary;
+            // Combining Loops and Arrays.
 
-             //task: add a 5% bonus for everybody
-             for( var i=0; i<salaries.length; i=i+1 ){
-                 var old = salaries[i];
-                 salaries[i]= old + (old * .05);
-             }
+            var salaries = [19900, 34998, 29990, 49976, 88944, 10000];
+            // Task: Add a 5% bonus for everyone.
 
-             console.log(salaries);
+            // Bonus for 1 Salary START
+            var oldSalary = salaries[0];
+            var percentBonus = .05;
+            var newSalary = oldSalary + (oldSalary * percentBonus);
+
+            salaries[0] = newSalary;
+            // Bonus for 1 Salary END
+
+            console.log(salaries);
+
+            for (var i = 0; i < salaries.length; i = i + 1) {
+                var old = salaries[i];
+                salaries[i] = old + (old * .05);
+            }
+
+            console.log(salaries);
+
+            // objects: cvalues or datatypes with curly brace and semicolon to end the statement. don't have indexes (address) so they need keys with semicolon (always strings)
+
+            var myFirstObject = {};
+
+            // code blocks usually end an If, Loops or Function and DO NOT END with SEMICOLON
+
+            if(false) {}
+
+            var mySecondObject ={
+                "name": "Eduardo", 
+                "age": 31
+            };
+
+            //i.e. array:
+
+            var myEmployee1 =["eduardo", 31, "part-time", "Meda"];
+
+            //object and colling to console an "index" by putting the string name:
+            //note: bracket notation, needs to have a string datatype to access that vaile inside of the object
+
+            var myEmployee2 ={
+                "name": "Eduardo",
+                "age": 31,
+                "status": "part-time",
+                "employer": "meda",
+                "active": true,
+                "current position": "instructor",
+                "daysWorked": [14, 19, 20, 21],
+                "eduaction": [
+                    {
+                        institution: "CCSF",
+                        years: 3,
+                        days : [18, 19, 20]
+                    },
+                    {
+                        institution: "Berkeley City College",
+                        years: 1
+                    }
+                ]
+                }
+
+            console.log(myEmployee2["status"]);
+
+            //alternative: DOT notation, needs to have a string with NO spaces, should NOT use double quotes either
+
+            myEmployee2.status;
+            myEmployee2["current position"];
+            
+            //to update an object
+
+            myEmployee2.name = "Edward";
+            myEmployee2["current positio"] ="none";
+
+            console.log(myEmployee2);
+
+            // to add, it's easy. i.e. salary
+
+            myEmployee.salary= 1;
+            console.log(myEmployee2);
+
+            // getting arrays index for days form education Array
+            myEmployee2.eduacation[0].days[1]
+
+            //objects: properties & methods
+            // properties are "variables that belog to an object
+            //methos are "function" that belog to an object"
+
+            var myThirdObject = {
+                myProperty:10,
+                myMethod: function sayHello(){
+                    console.log("Hello");
+
+                }
+            };
+
+            console.log(myThirdObject.myproperty);
+
+            //parenthesis to run function by name (key name)
+
+            myThirdObject.MyMethod();
+
+            //anonymous function does not have a name, and can store many functions that will inherit the key name
+            var myThirdObject = {
+                myProperty:10,
+                myMethod: function (){
+                    console.log("Hello");
+
+                }
+            };
+
+            console.log(myThirdObject.myproperty);
+
+            myThirdObject.MyMethod();
+            console.log("hello");
+
+            //another method math
+
+            Math.pow(10,2);
+            Math.sqrt(100);
+
+            //another methods (properties), if it's yellow it's a funtion. length is a property (just a number). These methods exist only in arrays. salaries is an array that was created above; as example to avoid bugging out
+            //a method is a function that runs inside a object. a function works independently
+            salaries.push();
+            salaries.pop();
+            salaries.unshift();
+            salaries.shift();
+            salaries.length();
+
 
 
 
