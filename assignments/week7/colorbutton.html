@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press the button to change color</title>
+</head>
+<body>
+
+    <button id="colorbutton">Press to change color</button>
+
+    <script>
+        var button = document.getElementById("colorbutton");
+        button.addEventListener("click", function(){
+
+            var randomColor =(Math.random() *256);
+
+            var startOfColor ="rgb()";
+            var redColor = 255;
+            var geenColor = 0;
+            var blueColor = 0;
+            var delimiter = ",";
+            var endOfColor =")";
+
+            var color = startOfColor + redColor + delimeter +blueColor + endOfColor;
+
+            var 
+
+            
+           //var color = "rgb(255, 0, 0)";
+            //document.body.style.backgrounColor = color;
+
+
+        });
+
+
+    </script>
+
+    
+</body>
+</html>

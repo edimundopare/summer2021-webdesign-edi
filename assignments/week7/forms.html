@@ -13,9 +13,14 @@
         <style>
 
         </style>
+        <!--Javascript can be in head, body or at end depending on when you need them-->
+
+        <script>
+
+        </script>
     </head>
     <body>
-        <form>
+        <form id="signup">
             <!--input is self-closing tag-, with type otherwise will be defaule text -->
             <!--label needs closing tag. assigned by id in the input-->
             <label for="fname">First Name</label>
@@ -26,12 +31,75 @@
             <input type="button" value= "clickhere" id="clickhere1"/><br />
             
 
-            <input type="radio" name="spam"value="no"/>
-            <input type= "checkbox" name="tickhere" value="yes"/>
+            <input type="radio" name="spam"value="no" checked/>
+            <input type= "checkbox" name="tickhere" value="yes" checked/>
             <input type= "reset" />
             <input type= "submit" value="go nowhere" />
 
         </form>
+
+        <p id="output">
+
+        </p>
+
+        <script>
+
+            //for tiemout anynymous () function definition behaves like a value
+
+            var MyFunction = function() { 
+                console.log("hello");
+            };
+
+            //time is in milliseconds. If myFuntion() will run
+
+            // Asynchronous JavaScript. Code runs independently of each other
+
+            setTimeout(myFunction,3000);
+
+            setTimeout(function (){ console.log("goodbye");}, 4000 );
+
+
+
+            // <!--htmlcheatsheet.com -->
+
+        //<!--DOM at the end of the form? getElementbyId is a function that needs to be well spelled. it will store myform in a variable called myForm (see below)-->
+
+        //we need  avariable to the button to submit, it needs an id
+
+        var myButton =document.getElementbyId("clickhere1");
+
+        myButton.addEventListener("right-click", function(){ console.log("button pressed")
+
+        var myTextBox =myForm.elements["fname"];var userInput = myTextBox.value;
+
+        userInput = userInput + "!!!";
+        var paragraph = document.getElemebtbyId("output");
+
+        paragraph.innerHTML = userInput;
+    
+    
+    });
+        
+        //if only this four lines, code runs immediately without wating for user input that's why settimeout function above
+        var myForm = document.getElemetbyId("signup");
+        var myTextBox =myForm.elements["fname"];
+
+        
+        var userInput = myTextBox.value;
+
+        console.log(userInput);
+
+        console.log()
+
+
+
+        
+
+
+
+        </script>
+       
+
 
 
 
