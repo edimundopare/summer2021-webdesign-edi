@@ -1,3 +1,7 @@
+:::::::::::::
+Homework8-1
+:::::::::::::
+
 My design will be simplistic like many professional websites that are about content rather than graphics or commercial.
 
 Thus:
@@ -26,3 +30,41 @@ Galaxies Apollonius of Perga hundreds of thousands hydrogen atoms globular star 
 Why do I find Lorem Ipsum so funny?
 How far away Sea of Tranquility Sea of Tranquility rich in heavy atoms with pretty stories for which there's little good evidence something incredible is waiting to be known and billions upon billions upon billions upon billions upon billions upon billions upon billions.
 
+::::::::::::
+Homework8-2 
+::::::::::::
+
+Three different portfolios choices
+==================================
+
+(1) 
+URL:https://alkavadlo.com/
+Likes(1) Using images as background, simplistic color
+Likes(2)Footer, categories elected pages-size according with number of hits
+Likes(3) Fonts are clear, size and color allow easy read
+
+Dislikes(1): Too much information
+Dislikes(2): Overuse of author's own portrait (me, me, me)
+Dislikes(3)/Users/eddie/Desktop/summer2021-webdesign-edi/projects/portfolio/design_brief.txt: highly commercial which makes it distracting 
+
+===========
+(2) 
+URL: https://hankgreen.com/
+Likes(1): Simple serif font, easy to read and scheme fast
+Likes(2): Professional looks, not overwhelming. Own motto
+Likes(3): Color palette shows professionalism
+
+Dislikes(1): product images with colors that diminish professional look to more commercial
+Dislikes(2):periods at the end of his bullet points
+Dislikes(3): picture when he looked young, dated
+
+===========
+(3) 
+URL:http://www.tejucole.com/
+Likes(1): simple, good color palette, unique
+Likes(2): easy navigation, not overwhelming
+Likes(3): visual emphasis on name of the artist and a single sample of his work
+
+Dislikes(1): order of header menu links (number of pages)
+Dislikes(2): text in each page is small, looks hard to scheme through
+Dislikes(3): too much text in each page. Long bio.
