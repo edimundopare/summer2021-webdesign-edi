@@ -1,0 +1,28 @@
+My design will be simplistic like many professional websites that are about content rather than graphics or commercial.
+
+Thus:
+
+1- background color: slight off white or slightly tinted #F5F3F5
+2. Font: roboto or lato (TBD) color black (for me to see it)
+3. Header color: #F3E4F4 or #ESF0DF
+4. Link: #F3E4F4 depending on 3 above
+
+Portfolio pages:
+1. Home page Bio
+
+I’m a data analyst with data management software implementation experience. My primary function is to support Research organizations by conducting descriptive analytics to test the safety & potential value of product prototypes and to advance final product development.  
+
+2. Contact
+
+Email address: emirashier@gmail.com
+Linkedin: https://www.linkedin.com/in/ethmundo/
+City State and postal code: San Francisco CA 94111
+3. General work
+Carl Sagan Cosmos Lorem Ipsum
+Galaxies Apollonius of Perga hundreds of thousands hydrogen atoms globular star cluster citizens of distant epochs. At the edge of forever kindling the energy hidden in matter the only home we've ever known courage of our questions a still more glorious dawn awaits great turbulent clouds? How far away Sea of Tranquility Sea of Tranquility rich in heavy atoms with pretty stories for which there's little good evidence something incredible is waiting to be known and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+
+4. Special project
+
+Why do I find Lorem Ipsum so funny?
+How far away Sea of Tranquility Sea of Tranquility rich in heavy atoms with pretty stories for which there's little good evidence something incredible is waiting to be known and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+
