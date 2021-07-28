@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move the Circle</title>
+<style>
+    #circle{
+        background-color: green;
+        width: 200px;
+        height: 100px;
+        border-radius: 50%;
+        /*WASD in video games*/
+    }
+
+</style>
+
+<script src="jquery-3.6.0.min.js"></script>
+
+<script>
+    //ALways to document ready when jquary. document ready $(function(){}
+    //https://learn.jquery.com/
+
+    //color code: copied from week 7 random color code
+    $(function(){   
+         $(document).keypress(function(event){
+             console.log(event.which); //tell us which key board was pressed, in ASCI character codes
+
+             if(event.which ==97){
+                 var existingMargin =$("#circle").css("margin-left");
+
+                 existingMargin = parseInt(existingMargin);
+
+                 existingMargin = existingMargin -50; //increase margin to left as we move to left with folowing code:
+
+                 $("#circle").css("margin-left", "-50px" );
+             }
+
+
+         });
+    });
+    //keypress similar to click but 
+       
+
+  
+
+
+</script>
+
+</head>
+<body>
+    <div id="circle"></div>
+    <input id="text" type="text" />
+</body>
+</html>
