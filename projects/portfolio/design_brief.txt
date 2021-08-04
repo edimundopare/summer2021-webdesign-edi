@@ -10,6 +10,7 @@ Thus:
 2. Font: roboto or lato (TBD) color black (for me to see it)
 3. Header color: #F3E4F4 or #ESF0DF
 4. Link: #F3E4F4 depending on 3 above
+Photo by Ismaeel Zakariya from Pexels
 
 Portfolio pages:
 1. Home page Bio
